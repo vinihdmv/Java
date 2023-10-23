@@ -37,12 +37,32 @@ public class Programa {
 
 ==================================================##===============================================================================================================================##============================================================
 
+==================JAVA=====================
 
+
+como fazer um scanner?
+
+1)importar a biblioteca:
+import java.util.Scanner;
+
+
+2) Fazer o incremento do scanner no programa e sua abreviação:
+
+Scanner sc=new Scanner(System.in);
+
+
+3)utilização:
+
+int x;
+
+System.out.printf("Escreva um num:\n");
+x=sc,newInt();
 
 
 package aplicacao;
 import java.util.Scanner;
 
+==================JAVA=====================
 
 public class nvo_exercicio {
 	public static void main(String[] arg) {
