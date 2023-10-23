@@ -1,0 +1,70 @@
+
+//Primeira aula de Java!
+
+
+package aplicacao;
+
+import java.util.Locale;
+
+public class Programa {
+
+	public static void main(String[] arg) {
+		String product1 = "Computer";
+		String product2 = "Office desk";
+				
+		int age = 30;
+			int code = 5290;
+			char gender = 'F';
+				
+			double price1 = 2100.0;
+			double price2 = 650.0;
+			double measure = 53.234567;
+			
+	
+			System.out.printf("Mesa de escritório, cujo preço e:%2f\n",price1);
+			System.out.printf("O preco do computadorn é %2f\n",price1);
+			System.out.printf("O preco do computadorn é %2f\n",price2);
+			System.out.printf("A idade: %d codigo %d e genero: %s\n",age,code,gender);
+			System.out.printf("Media de 8 casa decimais:%.8f\n",measure);
+			System.out.printf("cercado com 3 casas decimais:%.3f\n",measure);
+			Locale.setDefault(Locale.US);
+			System.out.printf("ponto decimal dos eua:%.3f",measure);
+	}
+
+	
+}
+
+
+==================================================##===============================================================================================================================##============================================================
+
+
+
+
+package aplicacao;
+import java.util.Scanner;
+
+
+public class nvo_exercicio {
+	public static void main(String[] arg) {
+		int num=0;
+		int horas=0;
+		int horas_trab;
+		int result=0;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println(("Es creva o seu numero:"));
+		num=sc.nextInt();
+		System.out.println(("Horas trabalhadas:"));
+		horas=sc.nextInt();
+		System.out.println(("Valor de hora recebida:"));
+		horas_trab=sc.nextInt();
+		
+		result=horas*horas_trab;
+		
+		System.out.printf("Numero do funcionario: %d\n",num);
+		System.out.printf("Salario: %d\n",result);
+		
+		
+		
+	}
+}
