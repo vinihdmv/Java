@@ -86,7 +86,7 @@ public class exercicio2 {
 
 =========================================================================================================##===================================================================================================
 
-Exercicio de calculadora!:
+#Exercicio de calculadora!:
 
 package projetos;
 import java.util.Scanner;
@@ -140,3 +140,55 @@ public class exercicio2 {
 
 }
 }
+
+
+#Exercicio coordenadas:
+
+package projetos;
+
+import java.util.Scanner;
+
+public class sandbox {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		Double valor1, valor2;
+		
+		System.out.println("Plano Cartesiano de Maluco\n");
+		System.out.println("escreva até uma casa decimal!\n");
+		
+		
+		System.out.println("Escreva um valor de x:");
+		valor1=sc.nextDouble();
+		
+		System.out.println("Escreva outro valor de y:");
+		valor2=sc.nextDouble();
+		
+		
+		if(valor1>0 && valor2>0) {
+			System.out.println("Suas cordenadas apontam para o quadrante Q1");
+		}
+		else if(valor1>0&&valor2<0) {
+			System.out.println("Suas cordenadas apontam para o quadrante Q4");
+		}
+		else if(valor1<0&&valor2>0) {
+			System.out.println("Suas cordenadas apontam para o quadrante Q2");
+		}
+		else if(valor1<0&&valor2<0) {
+			System.out.println("Suas cordenadas apontam para o quadrante Q3");
+		}
+		else if(valor1==0 && valor2!=0) {
+			System.out.println("Vc esta sobre o eixo y");
+		}
+		else if(valor1!=0 && valor2==0) {
+			System.out.println("Vc esta sobre o eixo x");
+		}
+		else {
+			
+				System.out.println("Sua coordenadas apontam para a Origem!");
+			
+		}
+		
+}
+	
+	}
