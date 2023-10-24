@@ -1,0 +1,142 @@
+/*
+
+                               //exercicio 1 de Java!
+package projetos;
+import java.util.Scanner;
+
+public class exercicio1 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		int num;
+		System.out.println("Escreva um numero:");
+		num=sc.nextInt();
+		
+		if(num>2) {
+			System.out.printf("seu numero %d é maior que dois",num);
+		}
+		else if(num<2) {
+			System.out.printf("seu numero %d é menor que dois",num);
+		
+	}
+		else if(num==2) {
+			System.out.printf("seu numero %d é igual a dois",num);
+		
+	
+	}
+}
+}
+
+		                           //exercicio 2 de Java!
+
+package projetos;
+import java.util.Scanner;
+
+public class exercicio2 {
+
+	public static void main(String[] args) {
+	Scanner sc= new Scanner(System.in);
+	
+	int num=0;
+	System.out.println("Escreva um numero e transmutarei ele em 10");
+	num=sc.nextInt();
+	
+	if(num!=10) {
+		num=10;
+		System.out.printf("Seu numero é agora %d",num);
+		
+	}
+	
+		
+	}
+
+}
+
+								  //exercio 3 de Java!
+
+package projetos;
+import java.util.Scanner;
+
+public class exercicio2 {
+
+	public static void main(String[] args) {
+	Scanner sc= new Scanner(System.in);
+	int nota;
+	
+	System.out.println("Avaliador de Notas!\n");
+	System.out.println("Escreva a sua nota animal!:");
+	nota=sc.nextInt();
+	
+	if(nota<5) {
+		
+		System.out.println("VC FOI REPROVADO HAHSHSASH!");
+	
+	}
+	else if(nota>5) {
+		System.out.println("VC FOI APROVADO!");
+	}
+	
+		
+	}
+
+}
+
+*/
+
+=========================================================================================================##===================================================================================================
+
+Exercicio de calculadora!:
+
+package projetos;
+import java.util.Scanner;
+
+public class exercicio2 {
+
+	public static void main(String[] args) {
+	Scanner sc= new Scanner(System.in);
+	int num1,num2,escolha;
+	float result_div;
+	
+	
+	System.out.println("Calculadora!\n");
+	
+	System.out.println("Escreva um num:");
+	num1=sc.nextInt();
+	
+	System.out.println("Escreva outro numero");
+	num2=sc.nextInt();
+
+	System.out.printf("Escreva uma operacao desejada com os num %d e %d",num1,num2);
+	System.out.println("|1-SOMA_____2-Subtracao_____3-divisao_____4-mult|");
+	
+	escolha=sc.nextInt();
+	
+	switch (escolha) {
+    case 1:
+        System.out.println(num1 + num2);
+        break;
+        
+    case 2:
+        System.out.println(num1 - num2);
+        break;
+        
+    case 3:
+        if (num2 != 0) {
+            result_div = (float) num1 / num2;
+            System.out.printf("Sua div: %.2f", result_div);
+        } else {
+            System.out.println("Divisão por zero não é permitida.");
+        }
+        break;
+        
+    case 4:
+        System.out.println(num1 * num2);
+        break;
+    default:
+        System.out.println("Opção inválida!");
+}
+
+
+}
+}
