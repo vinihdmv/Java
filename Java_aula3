@@ -45,7 +45,62 @@
 	
 	
 }
-	
+
+
+                                                    //WHILE
+
+
+package projetos;
+
+
+import java.util.Scanner;
+
+public class sandbox {
+
+    public static void main(String[] args) {
+    	
+        Scanner sc = new Scanner(System.in);
+        int op=0;
+        int gas=0,al=0,Di=0;
+        
+ 
+ 
+        
+        while(op!=4) {
+        	
+        	System.out.println("1-alcool,2-gasolina,3-diesel,4-fim");
+        	
+        	System.out.println("escreva uma opcao:");
+        	op=sc.nextInt();
+        	
+        	if(op==1) {
+        		System.out.println("Vc abasteceu com Alcool");
+        		al++;
+        	}
+        	else if(op==2) {
+        		System.out.println("Vc abasteceu com gasolina");
+        		gas++;
+        	}
+        	else if(op==3) {
+        		System.out.println("Vc abasteceu com Diesel");
+        		Di++;
+        	}
+        	else if(op==4){
+        		System.out.println("Quantidade abastecida\n");
+        		System.out.printf("Alcool:%d\n",al);
+        		System.out.printf("Gasolina:%d\n",gas);
+        		System.out.printf("Diesel:%d\n",Di);
+        		
+        	}
+        	else {
+        		System.out.println("Coloue um numero correspondente!");
+        	}
+        }
+        
+        
+        
+        
+        
 	
 	
 }
